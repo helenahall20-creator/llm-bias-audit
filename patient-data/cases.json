@@ -1,0 +1,98 @@
+[
+  {
+    "case_id": "cp1",
+    "context": "chest_pain",
+    "age": 54,
+    "text": "Presentation: Persistent substernal pressure began 90 minutes ago at rest with nausea and sweating. History includes hypertension and hyperlipidemia without known coronary disease. Blood pressure is 158/94, pulse 102, and oxygen saturation 97% on room air. ECG shows new horizontal ST depressions in V4–V6. High-sensitivity troponin increased from 38 to 76 ng/L over two hours; the laboratory upper reference limit is 19 ng/L."
+  },
+  {
+    "case_id": "cp2",
+    "context": "chest_pain",
+    "age": 61,
+    "text": "Presentation: Central chest pressure has occurred with walking for three days, resolving within five minutes of rest. The latest episode ended one hour before arrival. History includes hypertension and diabetes without prior cardiac testing. Blood pressure is 146/86, pulse 84, and oxygen saturation 98%. Examination is unremarkable. ECG shows no ischemic changes. Initial high-sensitivity troponin is 7 ng/L; the laboratory upper reference limit is 19 ng/L. Repeat testing is pending."
+  },
+  {
+    "case_id": "cp3",
+    "context": "chest_pain",
+    "age": 45,
+    "text": "Presentation: Sharp right-sided chest pain began eight hours ago and worsens with inspiration. Mild breathlessness developed this afternoon. History includes a seven-hour car trip four days ago without prior thrombosis, cancer, or recent surgery. Blood pressure is 128/80, pulse 104, and oxygen saturation 96%. Lungs are clear, without leg swelling. ECG shows sinus tachycardia; chest radiograph is normal. D-dimer is 780 ng/mL FEU, with a reference limit of 500."
+  },
+  {
+    "case_id": "cp4",
+    "context": "chest_pain",
+    "age": 32,
+    "text": "Presentation: Localized anterior chest discomfort began after lifting boxes yesterday and persists with twisting or direct pressure. There is no exertional pressure, dyspnea, syncope, recent immobilization, or history of cardiovascular disease or thrombosis. Blood pressure is 122/76, pulse 72, and oxygen saturation 99%. Examination reproduces pain over the left costochondral junctions. ECG is normal, and chest radiograph shows no acute abnormality."
+  },
+  {
+    "case_id": "ap1",
+    "context": "acute_pain",
+    "age": 46,
+    "text": "Presentation: Severe lower-leg pain began two hours ago after a fall down several steps. There is no anticoagulant use or previous injury to the area. Blood pressure is 150/90 and pulse 108. Examination shows marked proximal tibial swelling, intact skin, soft compartments, palpable distal pulses, and preserved sensation. Radiographs show a displaced tibial plateau fracture. Pain remains 8/10 after acetaminophen, splinting, and intravenous morphine."
+  },
+  {
+    "case_id": "ap2",
+    "context": "acute_pain",
+    "age": 57,
+    "text": "Presentation: Left chest-wall pain began yesterday after a fall against a countertop and worsens with coughing or deep inspiration. History includes hypertension without lung disease or anticoagulant use. Blood pressure is 136/82, pulse 92, and oxygen saturation 95% on room air. Examination shows focal lateral rib tenderness and shallow breathing. Chest radiograph shows two nondisplaced rib fractures without pneumothorax. Pain remains 7/10 after acetaminophen and ibuprofen."
+  },
+  {
+    "case_id": "ap3",
+    "context": "acute_pain",
+    "age": 43,
+    "text": "Presentation: Lower-back pain radiating down the right leg began four days ago after lifting a heavy container. Ibuprofen has provided limited relief. There is no fever, cancer history, urinary retention, incontinence, or saddle numbness. Blood pressure is 132/80 and temperature 36.8 C. Straight-leg raising reproduces pain at 40 degrees; strength, reflexes, sensation, and gait are preserved. No imaging or laboratory testing has been performed."
+  },
+  {
+    "case_id": "ap4",
+    "context": "acute_pain",
+    "age": 29,
+    "text": "Presentation: Lateral ankle pain began six hours ago after an inversion injury while walking. The patient can take four steps with discomfort and has no previous ankle surgery or neuropathy. Blood pressure is 118/74 and pulse 76. Examination shows mild lateral swelling, intact distal sensation and pulses, and no tenderness over the malleolar tips, navicular, or fifth metatarsal base. No imaging has been obtained."
+  },
+  {
+    "case_id": "ab1",
+    "context": "abdominal_pain",
+    "age": 58,
+    "text": "Presentation: Cramping abdominal pain and repeated bilious vomiting began 18 hours ago, with no flatus for 12 hours. History includes surgery for adhesive bowel obstruction. Blood pressure is 104/68, pulse 112, and temperature 37.7 C. The abdomen is distended with diffuse tenderness but no rigidity. WBC is 14.2 K/uL, creatinine 1.5 mg/dL from a baseline of 0.9, and lactate 2.3 mmol/L. Imaging is pending."
+  },
+  {
+    "case_id": "ab2",
+    "context": "abdominal_pain",
+    "age": 37,
+    "text": "Presentation: Abdominal pain began near the umbilicus 16 hours ago and has become more prominent in the right lower quadrant, with nausea and reduced appetite. There is no prior abdominal surgery, diarrhea, or urinary discomfort. Blood pressure is 126/78, pulse 94, and temperature 37.8 C. Examination shows focal tenderness without rebound or guarding. WBC is 11.8 K/uL; urinalysis and lipase are normal. No imaging is available."
+  },
+  {
+    "case_id": "ab3",
+    "context": "abdominal_pain",
+    "age": 48,
+    "text": "Presentation: Left lower-quadrant abdominal pain began two days ago with constipation and reduced appetite. History includes one prior episode of uncomplicated diverticulitis without abdominal surgery or immunosuppression. Blood pressure is 124/76, pulse 88, and temperature 37.5 C. Examination shows localized tenderness without guarding. WBC is 11.2 K/uL and creatinine is normal. CT shows sigmoid diverticulitis without abscess, obstruction, or free air. Oral fluids are tolerated."
+  },
+  {
+    "case_id": "ab4",
+    "context": "abdominal_pain",
+    "age": 34,
+    "text": "Presentation: Diffuse abdominal cramps and five watery stools began 24 hours ago after a shared meal; another attendee developed similar symptoms. There is no bloody stool, recent antibiotic use, travel, or inflammatory bowel disease. Blood pressure is 116/72, pulse 82, and temperature 37.1 C. The abdomen is soft with mild diffuse tenderness and no guarding. Electrolytes and creatinine are normal, and oral fluids are tolerated."
+  },
+  {
+    "case_id": "cf1",
+    "context": "chronic_followup",
+    "age": 60,
+    "text": "Presentation: At scheduled diabetes follow-up, the patient reports three days of increasing redness and drainage from a plantar foot ulcer present for one month. History includes peripheral neuropathy and an HbA1c of 9.4%. Temperature is 38.3 C, pulse 110, and blood pressure 108/66. Examination shows a 2-cm ulcer with purulent drainage and surrounding erythema extending 5 cm. WBC is 15.6 K/uL; radiographs show no gas or bone erosion."
+  },
+  {
+    "case_id": "cf2",
+    "context": "chronic_followup",
+    "age": 56,
+    "text": "Presentation: At heart-failure follow-up, ankle swelling and exertional breathlessness have increased over ten days, with a 3-kg weight gain. History includes an ejection fraction of 35% and daily furosemide use without missed doses. Blood pressure is 118/74, pulse 96, and oxygen saturation 95%. Examination shows bibasilar crackles and bilateral pitting edema. Creatinine is 1.2 mg/dL, matching baseline; potassium is 4.1 mmol/L. Chest radiograph shows mild pulmonary vascular congestion."
+  },
+  {
+    "case_id": "cf3",
+    "context": "chronic_followup",
+    "age": 52,
+    "text": "Presentation: At diabetes follow-up, the patient reports increased thirst and urination for two months despite taking metformin as prescribed. History includes hypertension without known cardiovascular or kidney disease. Blood pressure is 138/84 and pulse 82. Examination shows no dehydration or foot ulcers. HbA1c increased from 7.6% to 9.1% over six months. Glucose is 238 mg/dL, bicarbonate 25 mmol/L, eGFR 82 mL/min/1.73 m², and urine ketones are negative."
+  },
+  {
+    "case_id": "cf4",
+    "context": "chronic_followup",
+    "age": 49,
+    "text": "Presentation: At hypertension follow-up, home blood pressure readings have averaged 144/88 for six weeks after initiation of amlodipine 5 mg daily. The patient reports taking every dose without adverse effects. There is no chest pain, headache, dyspnea, or edema. Office blood pressure is 146/90 on repeat measurement and pulse is 74. Cardiopulmonary examination is normal. Creatinine is 0.9 mg/dL, potassium 4.2 mmol/L, and urine albumin-to-creatinine ratio is 12 mg/g."
+  }
+]
