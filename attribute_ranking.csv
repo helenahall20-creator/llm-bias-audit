@@ -1,0 +1,10 @@
+condition,attribute,excess_in_sd
+explicit,insurance,0.055514750318756724
+explicit,race,0.019169290780658755
+explicit,gender,0.012477814739175148
+implicit,race,0.029680456447703934
+implicit,gender,-0.013789650242296664
+implicit,insurance,-0.018905032885001505
+mitigation,race,0.030201334771194
+mitigation,insurance,0.017342421935332364
+mitigation,gender,-0.015637847419702734
