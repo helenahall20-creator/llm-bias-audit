@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from statsmodels.stats.multitest import multipletests
 
 OUTCOMES= ["esi", "admit", "opioid_prescription", "imaging", "referral"]
 ATTRIBUTES= ["race", "gender", "insurance"]
@@ -60,7 +61,7 @@ def main():
     noise = baseline.groupby("case_id")[OUTCOMES].std().mean()
 
     print("Noise floor (standard deviation when the same prompt is repeated): ")
-    print(noise.round(2).to_string(), "\n")
+    print(noise.round(4).to_string(), "\n")
 
     rows = []
     for condition in ["explicit", "implicit", "mitigation"]:
@@ -68,7 +69,7 @@ def main():
         if d.empty:
             continue
         d[OUTCOMES] = d[OUTCOMES].values - base_mean.loc[d.case_id, OUTCOMES].values
-        sd = d[OUTCOMES].std()
+        baseline_sd = baseline.groupby("case_id")[OUTCOMES].std().mean()
 
         for attribute in ATTRIBUTES:
             level_effect = level(d, attribute)
@@ -77,18 +78,26 @@ def main():
             chance = chance_spread(d, attribute, rng)
 
             for o in OUTCOMES:
-                rows.append({"condition": condition, "attribute": attribute, "outcome": o, "spread": spread[o], "chance_spread": chance[o].mean(), "excess_in_sd": (spread[o] - chance[o].mean()) / sd[o], "p_value": ((chance[o] >= spread[o]).sum() + 1) / (SHUFFLE + 1)})
+                rows.append({"condition": condition, "attribute": attribute, "outcome": o, "spread": spread[o], "chance_spread": chance[o].mean(), "excess_in_sd": (spread[o] - chance[o].mean()) / baseline_sd[o], "p_value": ((chance[o] >= spread[o]).sum() + 1) / (SHUFFLE + 1)})
 
             plot_effects(d, condition)
 
-        table = pd.DataFrame(rows)
-        table.to_csv("spread_by_attribute.csv", index=False)
+    table = pd.DataFrame(rows)
 
-        ranking = (table.groupby(["condition", "attribute"]).excess_in_sd.mean().reset_index().sort_values(["condition", "excess_in_sd"], ascending=[True, False]))
-        print("Attribute ranking (mean excess spread in standard deviations. Larger = larger shift than chance: )")
-        print(ranking.round(2).to_string(index=False))
-        ranking.to_csv("attribute_ranking.csv", index=False)
-        print("\nPer_outcome details have been saved to spread_by_attribute.csv")
+    # adding B-H false discovery correction
+    table["adjusted_p_value"] = multipletests(table["p_value"], method="fdr_bh")[1]
+    table["significant_unadjusted"] = table["p_value"] < 0.05
+    table["significant_adjusted"] = table["adjusted_p_value"] < 0.05
+
+    table.to_csv("spread_by_attribute.csv", index=False)
+
+    ranking = (table.groupby(["condition", "attribute"]).excess_in_sd.mean().reset_index().sort_values(["condition", "excess_in_sd"], ascending=[True, False]))
+    print("Attribute ranking (mean excess spread in standard deviations. Larger = larger shift than chance: )")
+    print(ranking.round(4).to_string(index=False))
+    ranking.to_csv("attribute_ranking.csv", index=False)
+    print("\nPer_outcome details have been saved to spread_by_attribute.csv")
+
+
 
 if __name__ == "__main__":
     main()
